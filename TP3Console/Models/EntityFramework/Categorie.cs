@@ -24,11 +24,6 @@ public partial class Categorie
     [Column("description")]
     public string? Description { get; set; }
 
-    [InverseProperty("IdcategorieNavigation")]
-    public virtual ICollection<Film> Films { get; set; } = new List<Film>();
-
-
-
     private ILazyLoader _lazyLoader;
     public Categorie(ILazyLoader lazyLoader)
     {

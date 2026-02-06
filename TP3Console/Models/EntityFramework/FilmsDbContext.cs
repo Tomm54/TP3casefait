@@ -9,11 +9,13 @@ public partial class FilmsDbContext : DbContext
 {
     public FilmsDbContext()
     {
+
     }
 
     public FilmsDbContext(DbContextOptions<FilmsDbContext> options)
         : base(options)
     {
+
     }
 
     public virtual DbSet<Avi> Avis { get; set; }
